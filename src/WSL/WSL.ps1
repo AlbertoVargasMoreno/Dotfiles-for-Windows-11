@@ -242,8 +242,8 @@ function Set-Zsh-As-Default-In-Ubuntu {
   # Change just for a user: sudo chsh -s $WslZshPath $USER_NAME;
 }
 
-choco install -y "wsl2" --params "/Version:2 /Retry:true";
-choco install -y "wsl-ubuntu-2004" --params "/InstallRoot:true" --execution-timeout 3600;
+# choco install -y "wsl2" --params "/Version:2 /Retry:true";
+# choco install -y "wsl-ubuntu-2004" --params "/InstallRoot:true" --execution-timeout 3600;
 
 Update-Ubuntu-Packages-Repository;
 Update-Ubuntu-Packages;
@@ -261,16 +261,16 @@ Set-Git-Configuration-In-Ubuntu;
 
 Install-VSCode-Extensions-In-WSL;
 
-Install-Volta-In-Ubuntu;
+# Install-Volta-In-Ubuntu;
 Install-Nodejs-Packages-In-Ubuntu;
 
-Install-Golang-In-Ubuntu;
-Install-Hugo-In-Ubuntu;
+# Install-Golang-In-Ubuntu;
+# Install-Hugo-In-Ubuntu;
 
-Install-Plug-Vim-In-Ubuntu;
-Copy-Initial-Vimrc-In-Ubuntu;
-Install-Vim-Plugins-In-Ubuntu;
-Copy-Final-Vimrc-In-Ubuntu;
+# Install-Plug-Vim-In-Ubuntu;
+# Copy-Initial-Vimrc-In-Ubuntu;
+# Install-Vim-Plugins-In-Ubuntu;
+# Copy-Final-Vimrc-In-Ubuntu;
 
 Install-OhMyZsh-In-Ubuntu;
 Install-OhMyZsh-Theme-In-Ubuntu;
